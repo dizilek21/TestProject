@@ -32,9 +32,9 @@ public void init(){
 	
 }
 
-/*@Override
+@Override
 public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException{
-	System.out.println("In service method.");*/
+	System.out.println("In service method.");
 	
 }
     
