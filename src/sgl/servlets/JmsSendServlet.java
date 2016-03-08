@@ -6,8 +6,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.jms.*;        
-import javax.naming.*;    
+//import javax.jms.*;        
+//import javax.naming.*;    
 
 
 @WebServlet("/JmsSendServlet")
@@ -29,18 +29,12 @@ public class JmsSendServlet extends HttpServlet {
 		
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		try {
+	/*	try {
 		//Context ctx =  
 		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
+			
 		catch (JMSException je)
 	    {
 	       System.out.println("JMS failed with "+je);
@@ -51,7 +45,7 @@ public class JmsSendServlet extends HttpServlet {
 	       }
 	    }
 		
-	
+	*/
 
 }
 	
