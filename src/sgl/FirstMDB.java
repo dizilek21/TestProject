@@ -27,7 +27,7 @@ public class FirstMDB implements MessageListener {
      * @see MessageListener#onMessage(Message)
      */
     public void onMessage(Message message) {
-        // TODO Auto-generated method stub
+        
         
     }
 
