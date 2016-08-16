@@ -28,7 +28,7 @@ public  class Servlet1 extends HttpServlet {
     
 //@Override    
 public void init(){
-	System.out.println("In init method.");
+	System.out.println("In init method..");
 	
 }
 }
