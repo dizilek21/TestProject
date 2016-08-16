@@ -1,6 +1,8 @@
 package sgl.servlets;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Enumeration;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,6 +25,15 @@ public  class Servlet1 extends HttpServlet {
 		
 		response.getWriter().println("<BR/BR>");
 		response.getWriter().println("hello");
+		
+		ArrayList<String> parameterNames = new ArrayList<String>();
+		Enumeration param = request.getParameterNames();
+		while (param.hasMoreElements()) {
+	        String parameterName = (String) param.nextElement();
+	        response.getWriter().println("parameterName: " + parameterName);
+	        response.getWriter().println("<BR/BR>");
+	        parameterNames.add(parameterName);
+	    }
 		
 	}
     
